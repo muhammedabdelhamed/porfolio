@@ -357,6 +357,43 @@ main {
   padding: 3px 12px;
   border-radius: 8px;
 }
+/* Skills Container */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive columns */
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Individual Skill Items */
+.skill {
+  background: var(--onyx);
+  color: var(--white-1);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  padding: 5px 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+  }
+}
 
 .info_more-btn {
   position: absolute;
