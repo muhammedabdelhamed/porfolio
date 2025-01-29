@@ -378,9 +378,6 @@ main {
   transition: transform 0.3s ease-in-out;
 }
 
-.skill:hover {
-  transform: scale(1.05);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
