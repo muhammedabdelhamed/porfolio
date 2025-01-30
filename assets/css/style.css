@@ -367,8 +367,18 @@ main {
 }
 
 /* Individual Skill Items */
-.skill {
+.myskill {
   background: var(--onyx);
+  color: var(--white-1);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  padding: 5px 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.skill {
+  /* background: var(--onyx); */
   color: var(--white-1);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
